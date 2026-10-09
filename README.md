@@ -23,7 +23,7 @@ command = "martin.claude-limits.show"
 ```
 
 Options go in `$(herdr plugin config-dir martin.claude-limits)/config.env`:
-`FETCH_INTERVAL=60`, and `SIDEBAR=1` to also report `$cc5h` / `$cc7d` tokens on the
+`FETCH_INTERVAL=180`, and `SIDEBAR=1` to also report `$cc5h` / `$cc7d` tokens on the
 focused Claude pane for `ui.sidebar.agents.rows_by_agent` (tuned by `TICK`, `REFRESH`, `SHOW_7D_RESET`).
 
 The OAuth token is read from the macOS Keychain (or `~/.claude/.credentials.json`) and

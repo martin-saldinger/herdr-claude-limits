@@ -6,7 +6,7 @@
 # Claude pane: the focused one, else the last one they were shown on.
 #
 # Optional config: $HERDR_PLUGIN_CONFIG_DIR/config.env
-#   FETCH_INTERVAL=60    seconds between usage API calls
+#   FETCH_INTERVAL=180   seconds between usage API calls
 #   SIDEBAR=0            also report sidebar tokens
 #   TICK=2               seconds between focus checks
 #   REFRESH=10           seconds between sidebar text refreshes
@@ -15,7 +15,7 @@ set -u
 herdr="${HERDR_BIN_PATH:-herdr}"
 root="$HERDR_PLUGIN_ROOT"
 state="$HERDR_PLUGIN_STATE_DIR"
-FETCH_INTERVAL=60
+FETCH_INTERVAL=180
 SIDEBAR=0
 TICK=2
 REFRESH=10
