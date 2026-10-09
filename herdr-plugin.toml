@@ -1,0 +1,29 @@
+id = "martin.claude-limits"
+name = "Claude Limits"
+version = "0.1.0"
+min_herdr_version = "0.9.0"
+description = "Poll Claude Code plan usage limits and show them in the tab bar"
+platforms = ["linux", "macos"]
+
+[[startup]]
+command = ["sh", "bin/start.sh"]
+
+[[actions]]
+id = "show"
+title = "Show Claude usage limits"
+contexts = ["workspace"]
+command = ["sh", "bin/open.sh"]
+
+[[actions]]
+id = "restart"
+title = "Restart Claude limits poller"
+contexts = ["workspace"]
+command = ["sh", "bin/start.sh"]
+
+[[panes]]
+id = "detail"
+title = "Claude usage"
+placement = "popup"
+width = 64
+height = 20
+command = ["sh", "bin/detail.sh"]
